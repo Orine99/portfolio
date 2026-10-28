@@ -10,7 +10,7 @@ const projects = [
     description:
       "A full-stack personal finance application built from scratch with secure JWT authentication, category management, real-time analytics, and a clean responsive UI. Users can track spending, visualise trends with interactive charts, and manage budgets by category.",
     tech: ["React", "Spring Boot", "PostgreSQL", "JWT", "Recharts", "React Query"],
-    status: "Live",
+    status: "Completed",
     github: "https://github.com/Orine99",
     featured: true,
     color: "from-blue-500/20 to-cyan-500/20",
@@ -164,15 +164,18 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-white">
-      <div className="max-w-5xl mx-auto">
+    <section id="projects" className="relative py-24 px-6 bg-navy-900 overflow-hidden">
+      {/* Accent line and soft glow to separate from the hero */}
+      <div className="absolute top-0 inset-x-0 h-px section-divider" />
+      <div className="absolute inset-0 hero-glow pointer-events-none" />
+      <div className="relative max-w-5xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-accent font-mono text-sm tracking-widest uppercase mb-3">What I&apos;ve Built</p>
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-4xl font-black text-white mb-4">
             Projects
           </h2>
-          <p className="text-gray-500 max-w-lg mx-auto">
+          <p className="text-gray-400 max-w-lg mx-auto">
             Real applications built end-to-end — from database schema to deployed UI.
           </p>
         </div>
