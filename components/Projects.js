@@ -22,6 +22,25 @@ const projects = [
     ),
   },
   {
+    id: 3,
+    title: "Gleeful Photo Editor",
+    tagline: "Fast in-browser photo editing",
+    description:
+      "A browser-based photo editor built for quick edits. Users can apply filters, crop with ratio presets or free-form controls, zoom and transform images, and export to PNG or JPG. Full undo/redo history covers every edit, and all processing runs client-side with no server uploads.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Canvas API"],
+    status: "Live",
+    github: "https://github.com/Orine99",
+    demo: "https://next-photo-editor-nine.vercel.app/",
+    featured: false,
+    color: "from-emerald-500/20 to-teal-500/20",
+    borderColor: "border-emerald-500/30",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
     id: 2,
     title: "Academic Probation Alert System",
     tagline: "Desktop application with Prolog AI rules",
